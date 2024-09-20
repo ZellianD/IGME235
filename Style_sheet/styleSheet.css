@@ -1,35 +1,73 @@
-/* Use the slectors mentioned in index here
-create a coherent color pallet 
-utilize the natural box layout 
-every part of every link must have a color withing the color yup
-this needs to go through some kind of checky thing I aint gonna worry about that just yet */
-/* $light-green: #beef9eff;
-$olivine: #a6c36fff;
-$moss-green: #828c51ff;
-$brunswick-green: #335145ff;
-$dark-green: #1e352fff; */
+
+/* *{
+    border: 1px solid white;
+} */
 body{
     background-color: #1e352f;
     text-align: center;
     color: #e7f0e1;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
-
+#content{
+    margin-left:20%;
+    margin-right:20%;
+    box-shadow:4px 4px 10px #0a120f, -4px -4px 10px #0a120f;
+}
 h1{
     color: #828c51;
-    margin-top: 5rem;
+    font-size: 4rem;
+    padding-top: 5rem;
+    overflow-wrap: break-word;
 }
-
-.bio{
-    margin-left: 20rem;
-    margin-right: 20rem;
+#personalIMG{
+    float:right;
+    max-block-size: 100%;
+    padding-left: 1rem;
+    /* padding-right: 3rem; */ 
+    padding-top: 3.5rem;
 }
-
+ .bio{
+    padding-left: 2rem;
+    padding-right: 2rem;
+} 
+.bio strong{
+    font-size: 1.25rem;
+}
+.bio p{
+    padding-top:4rem;
+    /* margin-left: 10rem; */
+    text-align:right;
+}
 div{
     margin-top: 2rem;
 }
-a.project:link{
-    color:#beef9eff;
+div .projects{
+    padding-top:5rem;
+    padding-bottom:5rem;
 }
-::-webkit-scrollbar{
-    scrollbar-color: #335145ff;
+div.projects p{
+    clear:right;
+    font-weight:bold;
+    font-size:x-large;
 }
+nav a{
+    padding: 1rem;
+}
+a:link{
+    color:#947EB0;
+}
+a:visited{
+    color:#808D8E;
+}
+a:focus{
+    color:#a3a5c3;
+}
+a:hover{
+    color:#766c7f;
+}
+a:active{
+    color:#a9d2d5;
+}
+ #GIT{
+    padding-top:1rem;
+} 
