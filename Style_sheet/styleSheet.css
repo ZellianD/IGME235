@@ -3,3 +3,33 @@ create a coherent color pallet
 utilize the natural box layout 
 every part of every link must have a color withing the color yup
 this needs to go through some kind of checky thing I aint gonna worry about that just yet */
+/* $light-green: #beef9eff;
+$olivine: #a6c36fff;
+$moss-green: #828c51ff;
+$brunswick-green: #335145ff;
+$dark-green: #1e352fff; */
+body{
+    background-color: #1e352f;
+    text-align: center;
+    color: #e7f0e1;
+}
+
+h1{
+    color: #828c51;
+    margin-top: 5rem;
+}
+
+.bio{
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+div{
+    margin-top: 2rem;
+}
+a.project:link{
+    color:#beef9eff;
+}
+::-webkit-scrollbar{
+    scrollbar-color: #335145ff;
+}
