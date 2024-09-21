@@ -4,8 +4,13 @@
     font-style: normal;
   }
 body{
-    background-color: lightblue;
+    background-color: #c5c1a2;
     font-family: Arial, Helvetica, sans-serif;
+}
+main,header,footer{
+    background-color: #EEEBD3;
+    margin: 0 auto;
+    width: 80vw;
 }
 /* h1{
     color:red;
@@ -25,9 +30,13 @@ blockquote{
     margin-left: 10rem;
     margin-right: 10rem;
 }
+
 #fygar img{
-    margin: 4rem;
+    display:block;
     max-width: 25%;
+    margin-left:auto;
+    margin-right: auto;
+
 }
 img.side{
     float:right; 
@@ -41,5 +50,34 @@ ul{
 p{
     margin-left: 2rem;
 }
+footer{
+    background-color: #ff8011c5;
+    padding-bottom: 1rem;
+}
+ hr{
+    border-color: #FF1B1C;
+ }
+#imgbig{
+    border: 4px solid #FF1B1C;
+}
+#dig{
+    border: 4px solid #FF1B1C;
+}
+a:link{
+    color:#FF1B1C;
+}
+a:visited{
+    color:#454E9E;
+}
+a:focus{
+    color:#FED766;
+}
+a:hover{
+    color:#F26430;
+}
+a:active{
+    color:#0CAADC;
+}
+
 
   
