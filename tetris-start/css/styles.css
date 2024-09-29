@@ -1,0 +1,53 @@
+
+h2{
+    /* text-decoration-line:underline;
+    text-decoration-color: red; */
+    border-bottom: 1px solid red;
+    clear:both;
+}
+figure img{
+    float:right;
+    /* max-width: 40%; */
+    width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.tet {
+    float: left;
+    max-width: 20%;
+    border: 2px solid black;
+    flex:0,1,300px;
+}
+.tet img{
+    max-width: 60%;
+}
+.square img{
+    max-width: 40%;
+}
+.long img{
+    max-width: 80%;
+}
+footer{
+    clear:both;
+}
+header,main,footer{
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+}
+#tetlist{
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+}
+.name{
+    display:block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+    font-weight: bolder;
+}
+.aliases{
+    margin: 1rem;
+    text-align:left;
+}
