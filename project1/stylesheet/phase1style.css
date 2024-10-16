@@ -1,0 +1,29 @@
+ *{
+    border: 1px solid white;
+  } 
+
+  #wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr,1fr,1fr,1fr;
+    grid-template-areas: "Bimg IntroCard"
+                         "Bimg BodyTXT"
+                         "Bimg Simg"
+                         "Bimg InfoCard";
+  }
+  #bigImg{
+    grid-area: Bimg;
+  }
+  #introCard{
+    grid-area: IntroCard;
+  }
+  #bodyText{
+    grid-area: BodyTXT;
+  }
+  #smallImg{
+    grid-area: Simg;
+  }
+  #infoCard{
+    grid-area: InfoCard;
+  }
