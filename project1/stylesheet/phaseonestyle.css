@@ -1,15 +1,16 @@
 *{
     border: 1px solid white;
   } 
-body{
-    background-color: blue;
-}
+  body{
+    background-color: black;
+  }
   #wrapper{
-    margin-left: 10rem;
-    margin-right: 10rem;
+    background-color: rgb(43, 43, 172);
+    margin-left: 25%;
+    margin-right: 25%;
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr,1fr;
+    grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr,1fr,1fr,1fr;
     grid-template-areas: "Bimg IntroCard"
                          "Bimg BodyTXT"
@@ -18,16 +19,35 @@ body{
   }
   #bigImg{
     grid-area: Bimg;
+    margin: auto;
+    border-right: 6px solid blue;
   }
   #introCard{
     grid-area: IntroCard;
+    margin: auto;
+    background-color: rgb(236, 160, 18);
+    border: 10px solid rgb(255, 115, 0);
+    border-top: 50px solid rgb(255, 115, 0);
   }
   #bodyText{
     grid-area: BodyTXT;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(241, 207, 54);
+    box-shadow: 10px 10px blue;
   }
   #smallImg{
     grid-area: Simg;
+    margin: auto;
+  }
+  #smallImg img{
+    border: 3px solid rgb(79, 79, 185);
   }
   #infoCard{
     grid-area: InfoCard;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(133, 109, 177);
+    box-shadow: 10px 10px white;
   }
