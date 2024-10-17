@@ -1,13 +1,14 @@
-*{
+/* *{
     border: 1px solid white;
-  } 
+  }  */
   body{
     background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
   }
   #wrapper{
     background-color: rgb(43, 43, 172);
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 25vw;
+    margin-right: 25vw;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr, 1fr;
@@ -19,35 +20,60 @@
   }
   #bigImg{
     grid-area: Bimg;
-    margin: auto;
+  }
+  #bigImg img{
     border-right: 6px solid blue;
   }
   #introCard{
     grid-area: IntroCard;
-    margin: auto;
+    margin-top:1.9rem;
     background-color: rgb(236, 160, 18);
     border: 10px solid rgb(255, 115, 0);
-    border-top: 50px solid rgb(255, 115, 0);
+    border-top: 0px solid rgb(255, 115, 0);
+    margin-left: -7rem;
+    z-index: 1;
+  }
+  #introCard h1{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    margin-top: 0;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    font-size: 20px;
+    text-align: center;
   }
   #bodyText{
     grid-area: BodyTXT;
-    margin: auto;
-    text-align: center;
+    clear: none;
+    text-align: left;
     background-color: rgb(241, 207, 54);
     box-shadow: 10px 10px blue;
+    margin-right: 10rem;
+    padding-bottom: 21rem;
+    margin-bottom: 0rem;
+    
+  }
+  #bodyText p{
+    padding-top: 2rem;
   }
   #smallImg{
     grid-area: Simg;
-    margin: auto;
+    margin-bottom: 0;
   }
   #smallImg img{
     border: 3px solid rgb(79, 79, 185);
+    float:right;
+    transform:translateY(-21rem);
   }
   #infoCard{
     grid-area: InfoCard;
-    margin: auto;
     text-align: center;
+    font-size: small;
     color: white;
     background-color: rgb(133, 109, 177);
     box-shadow: 10px 10px white;
+    margin-right: 15rem;
+    margin-top: 0;
+    transform:translateY(-23rem);
+    margin-left: -1rem;
   }
