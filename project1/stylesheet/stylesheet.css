@@ -1,5 +1,5 @@
 body{
-    background-color: blue;
+    background-color: #3f5f37;
     color: #432818;
 }
 
@@ -16,26 +16,7 @@ body{
                          "InfoCard"
                          "Foot";
 }
-@media screen and (min-width: 552px){
-    body{
-        background-color: red;
-    }
-}
-@media screen and (min-width: 672px){
-    body{
-        background-color: yellow;
-    }
-}
-@media screen and (min-width: 848px){
-    body{
-        background-color: olivedrab;
-    }
-}@media screen and (min-width: 1136px){
-    body{
-        background-color: purple;
-    }
-}
-@media screen and (min-width: 1520px){
+@media screen and (min-width: 1024px){
     body{
         background-color: rgb(118, 153, 95);
     }
@@ -70,13 +51,17 @@ body{
     position: relative;
     margin-bottom: 0;
     border-right:8px solid #6f1d1b;
-    justify-self: center;
+    justify-self:center;
+}
+#system{
+    max-width: 100%;
 }
 #mainIMG p{
     background-color: #99582a;
     margin: 0;
     border: 1px solid #6f1d1b;
-}    #subIMG{
+}    
+#subIMG{
     margin-right: -.9rem;
 }
 #introTXT{
@@ -155,7 +140,6 @@ body{
     text-align: center;
     font-size: medium;
 }
-
 .sec1{
     background-color: #dda15e;
 }
@@ -225,6 +209,9 @@ body{
     margin-bottom: 0;
     transform:translateY(-15rem);
     margin-left: -1rem;
+}
+#infoTXT p{
+    padding: 1rem;
 }
 
 footer{
