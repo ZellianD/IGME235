@@ -1,5 +1,6 @@
 body{
-    background-color: blue;
+    /* background-color: #3f5f37; */
+    background-color: red;
     color: #432818;
 }
 
@@ -16,26 +17,16 @@ body{
                          "InfoCard"
                          "Foot";
 }
-@media screen and (min-width: 552px){
-    body{
+/* @media screen and (min-width: 856){
+    #wrapper{
         background-color: red;
     }
-}
-@media screen and (min-width: 672px){
-    body{
-        background-color: yellow;
+    #mainIMG p{
+        margin: 0;
+        margin-right: 20rem;
     }
-}
-@media screen and (min-width: 848px){
-    body{
-        background-color: olivedrab;
-    }
-}@media screen and (min-width: 1136px){
-    body{
-        background-color: purple;
-    }
-}
-@media screen and (min-width: 1520px){
+} */
+@media screen and (min-width: 860px){
     body{
         background-color: rgb(118, 153, 95);
     }
@@ -70,60 +61,22 @@ body{
     position: relative;
     margin-bottom: 0;
     border-right:8px solid #6f1d1b;
-    justify-self: center;
+}
+#system{
+    max-width: 100%;
 }
 #mainIMG p{
     background-color: #99582a;
     margin: 0;
+    margin-right: 22rem;
     border: 1px solid #6f1d1b;
-}    #subIMG{
-    margin-right: -.9rem;
 }
-#introTXT{
-    margin-right: -2rem;
-}
-#introTXT header{
-    font-size: 3rem;
-}
-#mainIMG .pin{
-    margin-right: 25rem;
-    transform: translate(7rem,-56rem);
-}
-#mainIMG .pit{
-    margin-right: 24rem;
-    transform: translate(18rem,-55rem);
-}
-#mainIMG .thy{
-    margin-right: 24rem;
-    transform: translate(7rem,-48rem);
-}
-#mainIMG .parathy{
-    margin-right: 22.5rem;
-    transform: translate(17rem,-48rem);
-}
-#mainIMG .thym{
-    margin-right: 24rem;
-    transform: translate(7.5rem,-45rem);
-}
-#mainIMG .adr{
-    margin-right: 24rem;
-    transform: translate(2.8rem,-32rem);
-}
-#mainIMG .pan{
-    margin-right: 27rem;
-    transform: translate(16rem,-29rem);
-}
-#mainIMG .tes{
-    margin-right: 28rem;
-    transform: translate(17rem,-15rem);
-}
-#mainIMG .ova{
-    margin-right: 27rem;
-    transform: translate(7rem,-22rem);
-}
-#mainIMG p:hover{
-    background-color: #bb9457;
-}
+/* #mainIMG .something{
+    margin-right: 15rem;
+    transform:translate(19rem,-52rem);
+    background-color: #99582a;
+    margin-right: 22rem;
+} */
 #introTXT{
     grid-area: IntCard;
     display: grid;
