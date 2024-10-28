@@ -1,5 +1,6 @@
 body{
     background-color: #3f5f37;
+    font-family: "Special Elite",serif;
     color: #432818;
 }
 
@@ -8,7 +9,7 @@ body{
     display: grid;
     margin-top: 3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr,1fr,1fr,1fr,1fr,1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ,1fr;
     grid-template-areas: "IntCard"
                          "Bimg"
                          "MainTXT"
@@ -27,8 +28,8 @@ body{
         width: 50vw;
         margin: auto;
         margin-top: 3rem;
-        grid-template-columns: 1fr,1fr;
-        grid-template-rows: 1fr,3fr,1fr,1fr,1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr 1fr ,1fr;
         grid-template-areas: "Bimg IntCard"
                              "Bimg MainTXT"
                              "Bimg Simg"
@@ -41,8 +42,15 @@ body{
     #introTXT{
         margin-right: -2rem;
     }
+    #navbar{
+        margin-bottom: 0;
+    }
     #introTXT header{
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+    #introTXT p{
+        text-align: right;
+        font-size: .83rem;
     }
 }
 
@@ -57,6 +65,8 @@ body{
     max-width: 100%;
 }
 #mainIMG p{
+    font-size: smaller;
+    padding: .1rem;
     background-color: #99582a;
     margin: 0;
     border: 1px solid #6f1d1b;
@@ -72,26 +82,26 @@ body{
 }
 #mainIMG .pin{
     margin-right: 25rem;
-    transform: translate(7rem,-56rem);
+    transform: translate(7rem,-55rem);
 }
 #mainIMG .pit{
-    margin-right: 24rem;
+    margin-right: 23.5rem;
     transform: translate(18rem,-55rem);
 }
 #mainIMG .thy{
     margin-right: 24rem;
-    transform: translate(7rem,-48rem);
+    transform: translate(6.7rem,-48rem);
 }
 #mainIMG .parathy{
     margin-right: 22.5rem;
     transform: translate(17rem,-48rem);
 }
 #mainIMG .thym{
-    margin-right: 24rem;
+    margin-right: 25rem;
     transform: translate(7.5rem,-45rem);
 }
 #mainIMG .adr{
-    margin-right: 24rem;
+    margin-right: 24.5rem;
     transform: translate(2.8rem,-32rem);
 }
 #mainIMG .pan{
@@ -112,8 +122,8 @@ body{
 #introTXT{
     grid-area: IntCard;
     display: grid;
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 1fr,3fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
     grid-template-areas: "Title Title"
                          "Intro Nav";
     background-color: #dda15e;
@@ -136,7 +146,6 @@ body{
 
 #navbar{
     grid-area: Nav;
-    place-self: center;
     text-align: center;
     font-size: medium;
 }
@@ -163,6 +172,8 @@ body{
 #introTXT p{
     grid-area: Intro;
     padding: 1rem;
+    padding-top:8%;
+    text-align: center;
 }
 
 #mainTXT{
@@ -204,7 +215,7 @@ body{
     font-size: small;
     background-color: #af6d2b;
     box-shadow: 10px 10px #6f1d1b;
-    margin-right: 13rem;
+    margin-right: 10rem;
     margin-top: 0;
     margin-bottom: 0;
     transform:translateY(-15rem);
@@ -221,4 +232,20 @@ footer{
     padding-top: 1rem;
     padding-bottom: 1rem;
     box-shadow: 0 0 10px 10px #2c4226;
+}
+
+a:link{
+    color: #581918;
+}
+a:visited{
+    color: #853f28;
+}
+a:focus{
+    color: #fbfefd;
+}
+a:hover{
+    color: #041110;
+}
+a:active{
+    color: #c3a150;
 }
