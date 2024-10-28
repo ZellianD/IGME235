@@ -9,7 +9,7 @@ body{
     display: grid;
     margin-top: 3rem;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ,1fr;
+    grid-template-rows: auto;
     grid-template-areas: "IntCard"
                          "Bimg"
                          "MainTXT"
@@ -29,7 +29,7 @@ body{
         margin: auto;
         margin-top: 3rem;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 3fr 1fr 1fr ,1fr;
+        grid-template-rows: auto;
         grid-template-areas: "Bimg IntCard"
                              "Bimg MainTXT"
                              "Bimg Simg"
@@ -82,23 +82,23 @@ body{
 }
 #mainIMG .pin{
     margin-right: 25rem;
-    transform: translate(7rem,-55rem);
+    transform: translate(7rem,-58rem);
 }
 #mainIMG .pit{
     margin-right: 23.5rem;
-    transform: translate(18rem,-55rem);
+    transform: translate(18rem,-56rem);
 }
 #mainIMG .thy{
     margin-right: 24rem;
-    transform: translate(6.7rem,-48rem);
+    transform: translate(6.7rem,-50rem);
 }
 #mainIMG .parathy{
     margin-right: 22.5rem;
-    transform: translate(17rem,-48rem);
+    transform: translate(18rem,-49rem);
 }
 #mainIMG .thym{
     margin-right: 25rem;
-    transform: translate(7.5rem,-45rem);
+    transform: translate(8rem,-46rem);
 }
 #mainIMG .adr{
     margin-right: 24.5rem;
@@ -110,7 +110,7 @@ body{
 }
 #mainIMG .tes{
     margin-right: 28rem;
-    transform: translate(17rem,-15rem);
+    transform: translate(18rem,-15rem);
 }
 #mainIMG .ova{
     margin-right: 27rem;
@@ -141,12 +141,14 @@ body{
     margin-top: 0;
     margin-bottom: 0;
     padding: .2rem;
+    padding-top: 6%;
     font-size: 2rem;
 }
 
 #navbar{
     grid-area: Nav;
     text-align: center;
+    padding-top:8%;
     font-size: medium;
 }
 .sec1{
@@ -248,4 +250,8 @@ a:hover{
 }
 a:active{
     color: #c3a150;
+}
+
+footer a:visited{
+    color: #581918;
 }
