@@ -1,0 +1,20 @@
+body{
+ background-color: #3f5f37;
+ color: #432818;
+ text-align: center;
+}
+img{
+    max-width: 25%;
+    border:3px solid #6f1d1b;
+}
+#rot{
+    transform: rotate(-90deg);
+}
+p{
+    font-size: large;
+}
+hr{
+    border-color: #6f1d1b;
+    background-color: #6f1d1b;
+    width: 50%;
+}
