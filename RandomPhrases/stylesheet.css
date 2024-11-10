@@ -1,0 +1,40 @@
+body{
+    background-color: #060405;
+    color: wheat;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Metal Mania", serif;
+}
+header{
+    font-size: 4rem;
+}
+#container{
+    margin:auto;
+}
+#container img{
+    z-index: 0;
+}
+img{
+    max-width: 100%;
+}
+p{
+    font-size: 2rem;
+}
+button{
+    color: #060405;
+    border-style: none;
+    border: none;
+    background: none;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+button:hover{
+    transform: scale(1.2);
+}
+button:active{
+    transform: scale(1.4);
+}
+footer{
+    font-size: 1.25rem;
+}

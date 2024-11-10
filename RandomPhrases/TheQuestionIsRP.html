@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="icon" type="image/png" href ="Images/meat.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+    <title>The Question Is...</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>The Question Is...</header>
+
+    <div id="container">
+        <img src="Images/mouth.png" alt = "">
+        <p id="question"></p>
+    </div>
+
+    <br>
+    <!-- the button for prompting -->
+    <button><img src="Images/meat.png" alt=""></button>
+    <footer>Made by Zellian Dettmer</footer>
+    <script>
+        "use strict"
+
+        //the question
+        const p = document.querySelector("#question");
+        //the button
+        const button = document.querySelector("button");
+
+        //array of questions
+        const questions = 
+        ["Are you sure you're in the right place?",
+        "Do I look convincingly human?",
+        "If they take, why can't you?",
+        "Are we supposed to be grateful that we've survived this?",
+        "Would you do it again?"];
+         
+        //Random number within the array is generated into the p element
+        function generateQuestion(){
+            let random = Math.floor(Math.random()*questions.length);
+
+            p.innerHTML=questions[random];
+        };
+
+        //on button click
+        button.addEventListener("click",generateQuestion);
+    </script>
+</body>
+</html>
