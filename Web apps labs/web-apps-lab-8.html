@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps 8</title>
+</head>
+<body>
+<script>
+let cars = [
+	{make:"Toyota",	year:2015},
+	{make:"Jeep",	year:1946},
+	{make:"Ford",	year:2017},
+	{make:"Tesla",	year:2018},
+	{make:"Fiat",	year:1982},
+	{make:"Dodge",	year:1970},
+	{make:"Chevy",	year:1957},
+];
+
+// For this exercise you will use Array.filter(), Array.sort(), and Array.map() on
+// the cars array above.
+
+const classicCars = cars.filter(car => car.year <= 1970);
+console.log(classicCars);
+
+
+const sortedByYear = cars.sort((carA, carB) => carA.year - carB.year);
+console.log(sortedByYear);
+
+
+const newerYearsOnly = cars.map(car => {
+    if(car.year >= 2010){return car.year}
+        }).filter(year => {
+            return typeof year !== "undefined";});
+console.log(newerYearsOnly);
+
+debugger;
+</script>
+</body>
+</html>

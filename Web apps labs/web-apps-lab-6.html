@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Web Apps 6</title>
+	<style>
+		body{border:1px solid gray;}
+	</style>
+</head>
+<body>
+<h1>My Favorites</h1>
+<h2>My Favorite Colors</h2>
+
+<ol id="colorsList">
+	
+</ol>
+
+<h2>My Favorite Foods</h2>
+
+<ol id="foodsList">
+	
+</ol>
+
+<h2>My Favorite Links</h2>
+
+<ol id="linksList">
+	
+</ol>
+
+<script>
+"use strict";
+let colors = ["dark earth green","dark red","black (even tho it is a shade)"];
+let foods = ["garlic bean curd","mac and cheese", "strawberries", "peanutbutter whoopie pies"]; // add some foods
+
+for(let i = 0; i < colors.length; i++)
+{
+    let item = document.createElement("li");
+    item.innerHTML=colors[i];
+
+    let oL = document.querySelector("#colorsList");
+    oL.appendChild(item);
+}
+
+for(const food of foods)
+{
+    let item = document.createElement("li");
+    item.innerHTML = food;
+
+    let oL = document.querySelector("#foodsList");
+    oL.appendChild(item);
+}
+// Optional - can you figure out how to pull both the key AND the value
+// from the `links` object literal?
+let links = {
+		"Solitaire": "https://cardgames.io/solitaire/",
+		"Itch.io" : "https://zelrebellum.itch.io/nyctophobia",
+		"Grams to moles" : "https://www.omnicalculator.com/chemistry/grams-to-moles"
+	}
+
+    for(const link in links)
+    {
+        let item = document.createElement("li");
+        let anc = document.createElement("a");
+        anc.href = links[link];
+        anc.textContent = link;
+        item.appendChild(anc);
+
+        let oL = document.querySelector("#linksList");
+    oL.appendChild(item);
+    }
+
+</script>
+</body>
+</html>

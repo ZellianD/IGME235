@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>Web Apps 1</title>
+   <script>
+     "use strict";
+     // 1) Common JS Objects
+     let colors = ["red", "green", "blue"]; // Array literal
+     let person = {name:"Fred", age:20};   // Object literal
+     let month = new Date().getMonth(); 
+     let age = Math.round(20.999);
+     let age2 = Math.floor(20.999);
+
+     // add your new code here.
+      
+     //1 - add at end
+      colors.push("cyan");
+    
+      //print end not hard code
+      console.log(colors[colors.length-1]);
+
+      //loop array
+      for(let i = 0; i<= colors.length-1; i++)
+      {
+        console.log(colors[i]);
+      }
+
+      //adding property
+      person.school = "RIT";
+      console.log(person.school);
+
+      //time since 1970
+      console.log(Math.floor(Date.now()/1000));
+
+      //pi
+      console.log(Math.PI);
+
+      //abs of -999
+      console.log(Math.abs(-999));
+
+      //hello
+      let message = "hello";
+      console.log(message.toUpperCase());
+</script>
+
+</head>
+<body>
+</body>
+</html>
