@@ -51,7 +51,7 @@
          * Function that shows our monsters (just Goombas for now)
          * 
          */
-        function showMonsters(type,identifier) {
+        function showMonsters(type, identifier) {
             let monsterList = document.querySelector(identifier);
 
             for (let i = 0; i < monsters.length; i++) {
@@ -65,9 +65,9 @@
                              liStr += `<b>${key}:</b> ${monsters[i][key]}<br />`;
                          }
                         }
-                }
-                li.innerHTML = liStr;
+                        li.innerHTML = liStr;
                 monsterList.appendChild(li);
+                }
             }
         }
 
@@ -81,6 +81,7 @@
                 hp: 100,
                 speed: 10,
                 score: 100,
+                type: null,
                 status: function () {
                     console.log("name: " + this.name + ", hp: " + this.hp + ", speed: " + this.speed + ", score: " + this.score);
                 }
@@ -97,6 +98,7 @@
             goomba.hp = hp;
             goomba.speed = speed;
             goomba.score = score;
+            goomba.type ='goomba';
             goomba.takeDamage = function (dmgVal) {
                 goomba.hp -= dmgVal;
             }
@@ -112,6 +114,7 @@
             boo.hp = hp;
             boo.speed = speed;
             boo.score = score;
+            boo.type ='boo';
             boo.takeDamage = function (dmgVal) {
                 boo.hp -= dmgVal;
             }
