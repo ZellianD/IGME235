@@ -1,1 +1,13 @@
 /*style sheet should be broad to be able to use for everything :D */
+header{
+    text-align: left;
+}
+/* wrapper we want grid aligned horizontally for laptop and vertically for mobile*/
+/*within each div we also want a grid for each component within that*/
+/* yippie*/
+
+
+
+footer{
+    text-align: right;
+}
