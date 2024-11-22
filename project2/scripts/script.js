@@ -38,25 +38,25 @@ function cardSearch(){
         console.log("no card name");
         return;
     }
-    if(advance)
-    {
-        let rarity = document.querySelector("#rarity");
-        //r%3Drarityvalue
-        if(rarity.value!=null)
-            {
-                advanceSearch +="+r%3D"+rarity.value;
-            }
-        let color = document.querySelector("#color");
-        //c%3Dcolorvalueselected
-        let type = document.querySelector("#type");
-        //t%3Atypevalue can stack
-        let mana = document.querySelector("#mana");
-        if(mana.value!=null)
-        {
-            advanceSearch="+mv%3D"+mana.value;
-        }
+    // if(advance)
+    // {
+    //     let rarity = document.querySelector("#rarity");
+    //     //r%3Drarityvalue
+    //     if(rarity.value!=null)
+    //         {
+    //             advanceSearch +="+r%3D"+rarity.value;
+    //         }
+    //     let color = document.querySelector("#color");
+    //     //c%3Dcolorvalueselected
+    //     let type = document.querySelector("#type");
+    //     //t%3Atypevalue can stack
+    //     let mana = document.querySelector("#mana");
+    //     if(mana.value!=="null")
+    //     {
+    //         advanceSearch="+mv%3D"+mana.value;
+    //     }
         
-    }
+    // }
 
     //create url
     let apiurl = `${scryfall}?q=${cardName}${advanceSearch}`;
