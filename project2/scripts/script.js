@@ -48,6 +48,15 @@ function cardSearch(){
             }
         let colors = document.querySelector("#color");
         console.log(colors);
+        //console.log(colors.length); //undefined
+        // for(i = 0; i < colors.length; i++)
+        // {
+        //     console.log(i);
+        //     if(colors[i].checked == true)
+        //     {
+        //         console.log("true");
+        //     }
+        // }
         // colors.array.forEach(element => {
         //     if(element.checked)
         //     {
