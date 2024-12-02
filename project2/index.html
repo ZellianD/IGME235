@@ -3,9 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel ="icon" type="image/png" href ="imgs/Magic_card_back.png" sizes="32x32">
+    <title>MTG Card Finder</title>
+    <link rel="stylesheet" href="styleSheet/style.css">
 </head>
-<body>
-    <!-- Final project 2 -->
+     <div id="wrapper">
+        <header>MTG Card Finder</header>
+        <div id="search">
+            <div id="confirm">
+            <div id="bar">
+            <input type="text" placeholder ="Seach for a card name!" id="inputcard">
+            <button id="searchbutton">Search</button>
+            </div>
+            <div id="rands">
+                <button id="random">Random Card!</button>
+                <br>
+                <button id="rancom">Random Commander!</button>
+                </div>
+            </div>
+            <div id="advance">
+            <label for="mana">Converted mana cost:</label>
+            <select id="mana">
+                <option value="null" selected></option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+            </select>
+            <br>
+            <p>Color</p>
+            <ul id = "color">
+                <li>
+                    <input type="checkbox" id = "red" value="R">
+                    <label for="red">Red</label> 
+                </li>
+                <li>
+                    <input type="checkbox" id = "black" value="B">
+                    <label for="black">Black</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "blue" value="U">
+                    <label for="blue">Blue</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "green" value="G">
+                    <label for="green">Green</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "white" value="W">
+                    <label for="white">White</label>
+                </li>
+            </ul>
+            <br>
+            <!-- cardtypes checkbox -->
+            <label for="rarity">Rarity</label>
+            <select id="rarity">
+                <option value="null" selected></option>
+                <option value="common">Common</option>
+                <option value="uncommon">Uncommon</option>
+                <option value="rare">Rare</option>
+                <option value="mythic">Mythic</option>
+            </select>
+            <p>Card Type</p>
+            <ul id = "types">
+                <li>
+                    <input type="checkbox" id = "art" value="artifact">
+                    <label for="art">Artifact</label> 
+                </li>
+                <li>
+                    <input type="checkbox" id = "cre" value="creature">
+                    <label for="cre">Creature</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "enc" value="enchantment">
+                    <label for="enc">Enchantment</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "ins" value="instant">
+                    <label for="ins">Instant</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "land" value="land">
+                    <label for="land">Land</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "plane" value="planeswalker">
+                    <label for="plane">Planeswalker</label>
+                </li>
+                <li>
+                    <input type="checkbox" id = "sor" value="sorcery">
+                    <label for="sor">Sorcery</label>
+                </li>
+            </ul>
+            </div>
+            
+        </div>
+        <div id="showcase">
+            <p id="backfire"></p>
+            <img id="showcard" src="imgs/Magic_card_back.png" alt="Magic Card">
+        </div>
+    </div>
+     <footer><a target ="_blank" href="doc.html">Documentation</a></footer>
+     <script src = "scripts/script.js"></script>
 </body>
 </html>

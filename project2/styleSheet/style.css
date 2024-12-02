@@ -1,13 +1,66 @@
-/*style sheet should be broad to be able to use for everything :D */
+body{
+    background-color: #4A4B2F;
+    color: #D4DF9E;
+   }
 header{
     text-align: left;
+    font-size: 7rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    grid-area: head;
 }
-/* wrapper we want grid aligned horizontally for laptop and vertically for mobile*/
-/*within each div we also want a grid for each component within that*/
-/* yippie*/
-
-
-
-footer{
+#wrapper{
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "head imageShare"
+                         "search imageShare";
+}
+#search{
+    grid-area: search;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "bar adv";
+    justify-self: center;
+    margin-left: 10rem;
+}
+#advance{
+    grid-area: adv;
+    /* margin-right: 25rem; */
+}
+#confirm {
+    grid-area: bar;
+}
+#rands{
+    padding: 5rem;
+    padding-top: 2rem;
+}
+#random {
+    margin-bottom: 1rem;
+}
+#bar{
+    padding: 2rem;
+}
+#showcase{
+    padding-top: 3rem;
+    grid-area: imageShare;
+    padding-right: 4rem;
+}
+#showcase p{
+    font-size: 1.8rem;
     text-align: right;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+#showcase img{
+    float: right;
+    padding-right: 5rem;
+    max-width: 100%;
+}
+footer{
+    margin-top: -2rem;
+}
+ul{
+    list-style: none;
 }
