@@ -7,7 +7,6 @@
     const WORD_MARGIN = 10;
     const WORD_SPACING = 8;
     const MAX_Z_INDEX = 1000; 
-    //create consts to create a boarder that they cannot cross
 
  	window.onload = (e) => {positionWords(); setupStartingPoem(); setupDragging();};
 
@@ -39,7 +38,7 @@
         //changes the css to the declared position for the word
         word.style.left = wordLeft + "px";
         word.style.top = wordTop + "px";
-        word.style.transform = `rotate(${(Math.random() - 0.5)* 20}deg)`;
+        word.style.transform = `rotate(${(Math.random() - 0.5)* 10}deg)`;
     }
     function getWord(text)
     {
@@ -57,12 +56,6 @@
         let doMouseDown = (e) => {
             e.preventDefault();
             selectedElement = e.target;
-            //create something that checks and makes sure everything is within the bounds...which
-            //ive think theyve done weird here because i dont think there IS bounds
-            // if(selectedElement.x > TRAY_POSITION.x||selectedElement.y > TRAY_POSITION.y)
-            // {
-            //     setPosition(selectedElement,());
-            // }
             selectedElement.style.zIndex = MAX_Z_INDEX; 
         };
         let allWords = document.querySelectorAll(".word");
@@ -110,8 +103,7 @@
         };
     }
 
-    function getMousePos(parentElement,event)
-    {
+    function getMousePos(parentElement,event){
         let rect = parentElement.getBoundingClientRect();
         return{
             x: event.clientX - rect.left,

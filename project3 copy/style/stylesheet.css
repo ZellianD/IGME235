@@ -1,14 +1,13 @@
-		body{
-    		background-color: #3ee90a;
+body{
+    		background-color: #e0e0e0;
     	}
     	
     	#container{
     		width:815px;
-			background-color: #0a0ae9;
     	}
     	
 		#fridge{
-			/* background: #241b07; */
+			background: #ffffff;
 			cursor: pointer;
 			margin-left: 10px;
 			margin-top: 10px;
@@ -19,7 +18,7 @@
 		}
 		
 		#sidebar{
-			/* background: #843e3e; */
+			background: #f0f0f0;
 			float:left;
 			width:160px;
 			height:480px;
