@@ -12,10 +12,6 @@ const MAX_Z_INDEX = 1000;
 
 function setupStartingPoem()
 {
-    //will need to change this 
-    //this is looking all over the html for this one word
-    //will need to change this to match mine when i make it 
-    //original and all that jazz
     setPosition(getWord("gibber"),150,100);
     setPosition(getWord("gibber"),150,100);
     setPosition(getWord("ing"),210,100);
@@ -30,8 +26,6 @@ function setupStartingPoem()
     setPosition(getWord("eldritch"),260,230);
     setPosition(getWord("cyclopean"),270,280);
     setPosition(getWord("horror"),275,330);
-    //"10 more starting words to come"
-    //whatever the actual fuck that means
 }
 function setPosition(word,wordLeft,wordTop)
 {
