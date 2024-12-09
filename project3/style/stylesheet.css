@@ -1,77 +1,95 @@
 		body{
-    		background-color: #3ee90a;
+    		background-color: #464b04;
     	}
     	
     	#container{
-    		width:815px;
+    		width:900px;
 			background-color: #0a0ae9;
     	}
     	
-		#fridge{
-			/* background: #241b07; */
-			cursor: pointer;
+		#display{
+			background: #1a1409;
 			margin-left: 10px;
 			margin-top: 10px;
 			box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
 			width:640px;
 			height:480px;
 			float:left;
+			border-radius: 30px;
+			/* background-image: url(../img/Eye.png);
+			background-repeat: no-repeat; */
 		}
 		
 		#sidebar{
-			/* background: #843e3e; */
+			background: #3d392f;
 			float:left;
-			width:160px;
+			width:200px;
 			height:480px;
 			margin-top: 10px;
 			margin-left:5px;
 			box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+			border: 7px solid #302d25;
+			border-radius: 30px;
+		}
+
+		#tray{
+			background: #3d392f;
+			border: 7px solid #302d25;
+			cursor: pointer;
+			width:770px;
+			height: 160px;
+			margin-left: -805px;
+			margin-top: 510px;
+			float:left;
+			border-radius: 30px;
 		}
 		
 		.word,.titleWord{
 			position:absolute;
 			font-size:14px;
-			font-weight:bold;
-			font-family:courier,monospaced;
-			border: 1px solid #aaa;
-    		border-bottom: 2px solid #222;
-    		border-right: 2px solid #222;
-			background-color: #fefefe;
+			font-family:"Jacquard 24",courier,monospaced;
+			border: 1px solid #1d1606;
+    		border-bottom: 2px solid #1d1606;
+    		border-right: 2px solid #1d1606;
+			background-color: #ffe4aa;
 			padding:2px 5px 1px 5px;
 			cursor:move;
 		}
-		
-		/* Our Title Words */
+		img{
+			position: absolute;
+			cursor:move;
+		}
+
 		#title1{
-			top:8px;
-			left:665px;
+			top:25px;
+			left:690px;
 			font-size:22pt;
 			transform: rotate(7deg);
 		}
 		
 		#title2{
-			top:55px;
+			top:80px;
 			left:680px;
 			font-size:22pt;
 			transform: rotate(-7deg);
 		}
 		
 		#title3{
-			top:110px;
-			left:720px;
+			top:130px;
+			left:780px;
 			font-size:18pt;
 		}
 		
 		#title4{
-			top:150px;
+			top:175px;
 			left:700px;
 			font-size:20pt;
 			transform: rotate(5deg);
 		}
 		
 		#title5{
-			top:195px;
-			left:680px;
+			top:220px;
+			left:750px;
 			font-size:20pt;
 		}
 		
