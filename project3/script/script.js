@@ -5,8 +5,10 @@
     const MAX_IMAGE_LEFT = 770;
     const LINE_HEIGHT = 30; 
     const IMAGE_MARGIN = 80;
-    const IMAGE_SPACING = 80;
+    const IMAGE_SPACING = 80;   
     const MAX_Z_INDEX = 1000; 
+
+    let squish;
 
     const IMAGES = [`<img class="pic" src= "img/Eye.png" alt="">`,`<img class="pic" src= "img/Eye1.png" alt="">`,`<img class="pic" src= "img/Eye2.png" alt="">`]
     //create consts to create a boarder that they cannot cross
@@ -20,6 +22,8 @@
         {
             document.querySelector("#tray").innerHTML += img;
         }
+
+        squish = new Audio('./sounds/squish.mp3');
         // let testing = document.querySelector("#tray");
         // testing.innerHTML=`<img class="pic" src= "img/Eye.png" alt="">`;
     }
@@ -34,6 +38,7 @@
     {
         let doMouseDown = (e) => {
             e.preventDefault();
+            squish.play();
             selectedElement = e.target;
             //create something that checks and makes sure everything is within the bounds...which
             //ive think theyve done weird here because i dont think there IS bounds
