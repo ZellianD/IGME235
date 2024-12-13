@@ -15,8 +15,6 @@
 			height:480px;
 			float:left;
 			border-radius: 30px;
-			/* background-image: url(../img/Eye.png);
-			background-repeat: no-repeat; */
 		}
 		
 		#sidetray{
@@ -30,13 +28,21 @@
 			border: 7px solid #302d25;
 			border-radius: 30px;
 		}
-
+		#sidetray a{
+			position: absolute;
+			font-family:"Jacquard 24",courier,monospaced;
+			text-decoration: none;
+			font-size: 30px;
+			margin-top:445px;
+			margin-left:12px;
+			color:rgb(177, 174, 7);
+		}
 		#tray{
 			background: #3d392f;
 			border: 7px solid #302d25;
 			cursor: pointer;
 			width:770px;
-			height: 160px;
+			height: 190px;
 			margin-left: -825px;
 			margin-top: 510px;
 			float:left;
@@ -90,5 +96,24 @@
 			top:220px;
 			left:750px;
 			font-size:20pt;
+		}
+
+		footer{
+			position: absolute;
+			margin-top: 720px;
+			margin-left: 60px;
+		}
+		footer a{
+			color:rgb(177, 174, 7);
+			font-family:"Jacquard 24",courier,monospaced;
+			font-size: 30px;
+			text-decoration: none;
+		}
+
+		p{
+			text-align: center;
+			font-size:20px;
+			font-family:courier,monospaced;
+			padding:2px 5px 1px 5px;
 		}
 		
