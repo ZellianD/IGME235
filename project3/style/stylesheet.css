@@ -4,10 +4,9 @@
     	
     	#container{
     		width:900px;
-			background-color: #0a0ae9;
     	}
     	
-		#display{
+		#board{
 			background: #1a1409;
 			margin-left: 10px;
 			margin-top: 10px;
@@ -20,7 +19,7 @@
 			background-repeat: no-repeat; */
 		}
 		
-		#sidebar{
+		#sidetray{
 			background: #3d392f;
 			float:left;
 			width:200px;
@@ -38,13 +37,13 @@
 			cursor: pointer;
 			width:770px;
 			height: 160px;
-			margin-left: -805px;
+			margin-left: -825px;
 			margin-top: 510px;
 			float:left;
 			border-radius: 30px;
 		}
 		
-		.word,.titleWord{
+		.titleWord{
 			position:absolute;
 			font-size:14px;
 			font-family:"Jacquard 24",courier,monospaced;
